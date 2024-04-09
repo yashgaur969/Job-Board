@@ -1,0 +1,12 @@
+<div class="post" role="listitem">
+  <h2 class="post__title">
+    <a
+      [ngClass]="item.url ? '' : 'inactiveLink'"
+      [href]="item.url"
+      target="_blank"
+      rel="noopener"
+      >{{ item.title }}</a
+    >
+  </h2>
+  <span class="post__metadata">By {{ item.by }} : {{ time }}</span>
+</div>
